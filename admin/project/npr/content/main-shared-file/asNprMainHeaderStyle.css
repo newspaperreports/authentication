@@ -1,0 +1,579 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: #0098FE66;
+    overflow-y: scroll;
+    background: #fff;
+    text-size-adjust: none;
+    --asNpr-authentication: AS - MD AJIJUL HK;
+}
+
+body {
+    overflow: visible !important;
+    font: 10px / 13px 'Roboto Flex', 'Inter', 'Open Sans', 'Manrope', 'Work Sans', Arial, sans-serif;
+    background: unset;
+    word-wrap: break-word;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* 
+-----------------------------------------------
+Newspaper Reports Template Style
+Name:        Newspaper Reports
+License:     Premium Version
+Version:     3.0
+Author:      Newspaper Reports
+Author Url:  https://www.newspaperreports.com
+Contact:     asupdatemedia518@gmail.com
+----------------------------------------------- */
+
+:root {
+    /* AS NPR Meta Advertisement */
+    --asNpr-primary-gAds-lbl: 'Advertisement - scroll for more content';
+    --asNpr-secendary-gAds-lbl: 'Advertisement';
+    --asNpr-primary-gAds-clr: #787878;
+    /* AS Primary Font */
+    --asNpr-font-heading: 'Roboto Flex', sans-serif;
+    --asNpr-i-font-heading: 'Noto Serif', sans-serif;
+    --asNpr-font-content: 'Roboto Flex', sans-serif;
+    --asNpr-font-tag: 'Roboto Flex', sans-serif;
+    /* AS Primary Color */
+    --asNpr-heading-m-clr: #303030;
+    --asNpr-content-m-clr: #303030;
+    --asNpr-bg-m-clr: #303030;
+    --asNpr-bd-m-clr: #303030;
+    --asNpr-heading-x-clr: #ffffff;
+    --asNpr-content-x-clr: #ffffff;
+    --asNpr-bg-x-clr: #ffffff;
+    --asNpr-bd-x-clr: #ffffff;
+    --as-primary-border-tp-clr: rgb(0, 152, 254);
+    --as-primary-auth-logo-clr: #000000;
+    --as-primary-clr: #000;
+    --as-primary-bg-clr: #000;
+    --as-primary-fill-clr: #000;
+    --as-primary-fill-clr-ss: #fff;
+    --as-primary-clr-ss: #fff;
+    --as-primary-bg-clr-ss: #fff;
+    --as-primary-cg-hover-clr: #00FF7F;
+    --as-primary-reg-btn-hover-clr: #04AA6D;
+    --as-primary-subBtn-bg-clr: #1665cf;
+    --as-primary-src-icon-clr: #ffffff;
+    --as-primary-section-clr: #c2c2c2;
+    --as-primary-gb-p-screen: 0.8889rem;
+    /* Secendary Color */
+    --as-secendary-fill-clr: #303030;
+    --as-secendary-bg-clr: #303030;
+    /* Register Btn Color */
+
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.as_main_header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.topHeader {
+    border-top: 5px solid var(--as-primary-border-tp-clr);
+    background-color: var(--as-primary-bg-clr-ss);
+    padding: 0 var(--as-primary-gb-p-screen);
+}
+
+.topNavbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.asNpr_auth_info {
+    width: 160px;
+}
+
+.topNavbar .mainLogo a {
+    display: block;
+    color: var(--as-primary-auth-logo-clr);
+    padding: 5px 0;
+}
+
+.meta_owner_verification:hover .asNpr_m_metadata_owner g {
+    fill: #f31414;
+}
+
+.topNavbar .mainLogo a span {
+    color: #f31414;
+}
+
+/* Start Top Nav Items Design */
+.asNpr_m_tp_hd_it_list {
+    width: 100%;
+    max-width: 876px;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 15px;
+}
+
+.asNpr_m_tp_hd_it {
+    list-style-type: none;
+    position: relative;
+}
+
+.asNpr_m_tp_hd_it::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100% + 7px);
+    height: 100%;
+    border-right: 1px solid var(--as-primary-section-clr);
+}
+
+.asNpr_m_tp_hd_dt {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.asNpr_m_tp_hd_it_img {
+    width: 50px;
+    height: 50px;
+}
+
+.asNpr_m_hd_it_t {
+    box-sizing: border-box;
+    display: -webkit-box;
+    width: 100%;
+    height: 36px;
+    overflow: hidden;
+    margin: 0 0 3px;
+    font: 700 14px / 18px var(--asNpr-font-heading);
+    color: var(--asNpr-heading-m-clr);
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+}
+
+.asNpr_m_tp_hd_it__a:hover .asNpr_m_hd_it_t {
+    color: var(--as-primary-clr);
+    fill: var(--as-primary-clr);
+}
+/* End Top Nav Items Design */
+
+.userRegister_ct {
+    margin: 0 0 0 10px;
+}
+
+.userRegister_ct .userBtn {
+    border: 1px solid var(--as-primary-clr);
+    color: var(--asNpr-heading-x-clr);
+    padding: 8px 10px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font: 600 14px / 18px var(--asNpr-font-content);
+}
+
+.userRegister_ct .userBtn:hover {
+    color: var(--as-primary-clr);
+}
+
+.userRegister_ct .userBtn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--as-secendary-bg-clr);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.userRegister_ct .userBtn span::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: var(--as-primary-reg-btn-hover-clr);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.userRegister_ct .userBtn span::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: var(--as-primary-reg-btn-hover-clr);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+
+.userRegister_ct .userBtn:hover span::before,
+.userRegister_ct .userBtn:hover span::after {
+    width: 100%;
+}
+
+.signUp_Btn {
+    display: none;
+    margin-right: 10px;
+}
+/* End Top Header Section Design */
+
+/* Start Global Header / Menubar Section Design */
+.globalHeader_ct {
+    background: var(--as-secendary-bg-clr);
+    padding: 0 var(--as-primary-gb-p-screen);
+}
+
+.globalHd_info {
+    width: 100%;
+    max-width: 1200px;
+    height: 28px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.gHd_cg_lists {
+    width: max-content;
+    max-width: 100%;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.gHd_cg_lists::-webkit-scrollbar {
+    display: none;
+}
+
+.gHd_cg_bx {
+    padding-right: 3px;
+    position: relative;
+}
+
+.gHd_cg_bx:first-child {
+    margin-left: -10px;
+}
+
+.Heading_tt_gb_cg_a {
+    position: relative;
+    padding: 0px 10px;
+    display: block;
+    color: var(--asNpr-heading-x-clr);
+    font: 800 14px / 28px var(--asNpr-font-heading);
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.Heading_tt_gb_cg_a:focus,
+.Heading_tt_gb_cg_a:hover {
+    color: var(--as-primary-cg-hover-clr);
+    width: 100%;
+}
+
+/* Global Sidebar area */
+.gHd_sidebar_info {
+    align-items: center;
+}
+
+.gHd_sidebar_ct {
+    padding: 0 0 0 10px;
+}
+
+.npr_host_nav_icon {
+    margin: 0 5px 0px 5px;
+}
+
+.asNpr_op_MainHst_list {
+    padding: 0 5px;
+}
+
+.asNpr_op_MainHst_icon {
+    display: inline-block;
+    line-height: 18px;
+    border: 2px solid var(--as-primary-clr-ss);
+    padding: 0px 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.chevron-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+/* path-এ fill কালার কন্ট্রোল */
+.chevron-icon path {
+    fill: #fff;
+    transition: fill 0.3s ease;
+}
+
+.asNpr_op_MainHst_list:focus .asNpr_op_MainHst_icon {
+    background-color: var(--as-primary-bg-clr-ss);
+}
+
+.asNpr_op_MainHst_list:focus .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.asNpr_op_MainHst_list:hover .chevron-icon path {
+    fill: #00FF7F;
+}
+
+.asNpr_op_MainHst_list:focus .chevron-icon path {
+    fill: #000000;
+}
+/* End Main Host Nav */
+
+.gSearch_icon {
+    margin: 0 20px 0 10px;
+}
+
+.asNpr_op_MainSearch_icon {
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.asNpr_op_MainSearch_icon .search_icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.asNpr_op_MainSearch_icon .search_icon path {
+    fill: #FFF;
+    transition: fill 0.3s ease;
+}
+
+.asNpr_op_MainSearch_icon:hover .search_icon path,
+.asNpr_op_MainSearch_icon:focus .search_icon path {
+    fill: #00FF7F;
+}
+
+.gSearch_btn {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 180px;
+    top: 28px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid rgb(0, 152, 254);
+    background: #303030;
+    padding: 0 var(--as-primary-gb-p-screen);
+    z-index: 999;
+    overflow: hidden;
+    transition: all .10s ease-in-out;
+}
+
+.asSearchSubmit {
+    width: 60px;
+    height: 50px;
+    border: 0;
+    margin: 0 -15px 0 -45px;
+    padding: 0;
+    outline-offset: -8px;
+    fill: var(--as-primary-fill-clr-ss);
+    background: 0 0;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.asSearchSubmit:hover {
+    fill: #00FF7F;
+}
+
+.asSearchIcon {
+    width: 42px;
+    height: 42px;
+    margin-top: 3px;
+    stroke: #303030;
+    stroke-width: .5px;
+}
+
+.gSearch_btn .searchBx {
+    width: 100%;
+    max-width: 1020px;
+    height: 46px;
+    padding: 0 50px 0 0;
+    border-style: solid;
+    border-width: 0 0 2px;
+    border-color: var(--asNpr-bd-x-clr);
+    border-radius: 0;
+    outline: 0;
+    background: 0 0;
+    color: var(--asNpr-heading-x-clr);
+    font: 700 28px var(--asNpr-font-heading);
+}
+
+.searchBx::placeholder {
+    color: var(--as-primary-clr-ss);
+    opacity: 1;
+}
+
+/* Subscription Area */
+.subscribe_ct a {
+    display: inline-block;
+    padding: 0px 13px;
+    color: var(--asNpr-heading-x-clr);
+    background-color: var(--as-primary-subBtn-bg-clr);
+    font: 500 14px / 28px var(--asNpr-font-content);
+}
+
+.subscribe_ct a:hover {
+    color: var(--as-primary-cg-hover-clr);
+}
+
+/* Global NPR Host Nav Dropdown Menu Design */
+.nmp_host_nav {
+    display: none;
+}
+
+.npr_host_nav_ct {
+    display: block;
+    z-index: 99;
+    overflow: hidden auto;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    /* margin: auto; */
+    width: 320px;
+    /* height: calc(100vh - 80px); */
+    height: calc(var(--npr-vh, 100vh) - 80px - var(--npr-sh, 0px));
+    border-top: 5px solid var(--as-primary-border-tp-clr);
+    background-color: var(--as-primary-bg-clr);
+}
+
+.npr_hst_nav_info {
+    padding: 0 20px 20px;
+}
+
+.npr_hst_nav_it_hdLine {
+    margin: 22px 0 10px;
+}
+
+.npr_hst_nav_info .npr_hst_nav_it_title {
+    color: var(--as-primary-clr-ss);
+}
+
+.npr_hst_nav_info .npr_hst_nav_it_aa {
+    color: rgb(194, 194, 194);
+    font: 700 12px / 16px var(--asNpr-font-heading);
+    word-spacing: 3px;
+}
+
+.npr_hst_nav_info .npr_hst_nav_it_tt {
+    font: 800 18px / 22px var(--asNpr-font-heading);
+    position: relative;
+    display: inline-block;
+}
+
+.npr_hst_nav_it_tt::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--as-primary-border-tp-clr);
+}
+
+.npr_hst_nav_cg {
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.npr_hst_nav_cg_as,
+.npr_hst_nav_cg_rL {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.npr_hst_nav_items a {
+    display: block;
+    fill: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font: 700 14px / 18px var(--asNpr-font-heading);
+    text-overflow: ellipsis;
+    padding: 5px 2px;
+}
+
+.npr_hst_nav_items a:hover {
+    color: var(--as-primary-cg-hover-clr);
+}
+
+/* End Global Header / Menubar Section Design */
+
+/* Start Responsive Mobile Menu Section Design */
+.as_responsive_area {
+    display: none;
+}
+
+@media (max-width: 870px) {
+    .topHeader_ct {
+        display: none;
+    }
+
+    .as_responsive_area {
+        display: block;
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .globalHd_info {
+        flex-flow: column;
+        height: auto;
+    }
+
+    .gHd_cg_lists {
+        order: 1;
+        /* margin-top: 3px; */
+        border-top: 1px solid var(--as-primary-section-clr);
+    }
+
+    .gHd_sidebar_ct {
+        padding: 0;
+    }
+}
+/* End Responsive Mobile Menu Section Design */
